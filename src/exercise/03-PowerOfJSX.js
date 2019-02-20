@@ -22,7 +22,7 @@ function CompanyProfile(props) {
 
     return (
         <div>
-            <div>Profile of: {/**✏️ display stock ticker here*/}</div>
+            <div>Profile of: {/**✏️ display stock ticker here*/ stockTicker}</div>
             <hr/>
             <div>
                 {
@@ -45,6 +45,7 @@ function CompanyProfile(props) {
                      * 🧭 Remember to use curly braces inside the div to render
                      * any text content you want
                      */
+                    Object.keys(companyProfileInfo).map(d => <div>{d} : {companyProfileInfo[d]}</div>)
                 }
             </div>
         </div>
